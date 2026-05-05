@@ -9,7 +9,7 @@
     "backend": "node --env-file=.env server/index.js",
     "start": "node server/index.js",
     "start:local": "node --env-file=.env server/index.js",
-    "build": "vite build",
+    "build": "vite build && node scripts/create-spa-fallbacks.mjs",
     "build:dev": "vite build --mode development",
     "lint": "eslint .",
     "preview": "vite preview",
